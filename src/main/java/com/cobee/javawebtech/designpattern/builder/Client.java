@@ -3,6 +3,7 @@ package com.cobee.javawebtech.designpattern.builder;
 import java.lang.reflect.InvocationTargetException;
 
 /**
+ * 客户端使用创建模式来编写代码
  * Created by Administrator on 2018/4/29.
  */
 public class Client {
