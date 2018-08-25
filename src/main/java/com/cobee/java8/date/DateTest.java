@@ -58,24 +58,43 @@ public class DateTest {
      */
     public static void test4()
     {
-        LocalDate localDate = LocalDate.now();
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        System.out.println(localDate.format(dateTimeFormatter));
+        // 格式化打印日期
+//        LocalDate localDate = LocalDate.now();
+//        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+//        System.out.println(localDate.format(dateTimeFormatter));
+
+        // 转换转入的日期
+        String inputDate = "2018/07/01";
+        LocalDate inputLocalDate = LocalDate.parse(inputDate);
     }
 
     /**
-     * 使用LocalDate对象输出日期，是一个不可变的对像
+     * 使用LocalDateTime对象输出日期，是一个不可变的对像
      */
     public static void test5()
     {
         LocalDateTime localDateTime = LocalDateTime.now();
+        System.out.println(localDateTime.toString());
         System.out.println(localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
     }
 
+    /**
+     * 使用LocalDateTime计算和比较日期
+     */
+    public static void test6()
+    {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        LocalDateTime localDateTime = LocalDateTime.now();
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        System.out.println(localDateTime.isAfter(currentDateTime));
+        System.out.println(localDateTime.isBefore(currentDateTime));
+        System.out.println(localDateTime.isEqual(currentDateTime));
+        System.out.println(localDateTime.format(dtf));
 
+    }
 
     public static void main(String[] args) {
-        test5();
+        test6();
     }
 
 }
