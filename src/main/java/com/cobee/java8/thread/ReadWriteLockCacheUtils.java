@@ -24,6 +24,7 @@ public class ReadWriteLockCacheUtils {
             if (data == null)
             {
                 lock.readLock().unlock();
+                // 获取写锁
                 lock.writeLock().lock();
                 try {
                     data = dataMap.get(key);
@@ -36,7 +37,7 @@ public class ReadWriteLockCacheUtils {
                 }
                 catch (Exception e1)
                 {
-                    e1.printStackTrace();
+                    throw e1;
                 }
                 finally
                 {
