@@ -11,6 +11,7 @@ import java.util.Vector;
 public class VectorTester {
 
     public static void main(String[] args) {
+
         List<String> list = new ArrayList<>();
 
         // 写线程
