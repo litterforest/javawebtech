@@ -1,6 +1,7 @@
 package com.cobee.java8.thread;
 
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Created by Administrator on 2018/8/26.
@@ -12,6 +13,9 @@ public class ConcurrentCollectionsTester {
         concurrentHashMap.get("");
         concurrentHashMap.put("", "");
         concurrentHashMap.size();
+
+        CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
+
     }
 
 }
