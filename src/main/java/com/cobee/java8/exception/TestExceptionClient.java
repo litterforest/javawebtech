@@ -51,6 +51,10 @@ public class TestExceptionClient {
 
         System.out.println("这是怎么回事呀？");
 
+        System.out.println("hello world");
+
+        System.out.println("hello my son, i am your father");
+
     }
 
 }
