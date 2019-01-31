@@ -25,6 +25,16 @@ public class TestExceptionClient {
 
             System.out.println((120D));
 
+            System.out.println("hello mon");
+
+            System.out.println("big mon");
+
+            System.out.println("lufu");
+
+            System.out.println("索罗");
+
+            System.out.println("山治");
+
         }).start();
 
         new Thread(() -> {
@@ -38,6 +48,8 @@ public class TestExceptionClient {
 
         System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk" +
                 "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+
+        System.out.println("这是怎么回事呀？");
 
     }
 
