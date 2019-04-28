@@ -5,7 +5,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 /**
- * 对象方法引用
+ * 对象方法引用，实战中第一个参数类型，是要自定义的，否则没有业务逻辑意义。
  */
 public class ObjectMethodRef {
 
