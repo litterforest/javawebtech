@@ -32,10 +32,12 @@ public class BinarySearchTest {
             {
                 return m;
             }
+            // 值在左边
             else if (data[m] > val)
             {
                 return binarySearch(data, l, m - 1, val);
             }
+            // 值在右边
             else
             {
                 return binarySearch(data, m + 1, r, val);
